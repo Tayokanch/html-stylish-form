@@ -3,11 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
     <title>Stylish Form</title>
   </head>
   <body>
+      <form action="submit.html" target="_blank">
+        <h1>Say Hello!</h1>
+        <div class="input-box">
+          <label>Your name
+            <input type="text" placeholder="Enter your name" name="your name" required>
+          </label>
+        </div>
 
+        <div class="input-box">
+          <label>Email
+            <input type="email" placeholder="Enter your email address" name="email" required>
+          </label>
+        </div>
+
+        <div class="input-box">
+          <label>Needed Services
+            <select name="services" required>
+              <option disabled>Choose Services</option>
+              <option name="service" value="Web Development">Web Development</option>
+              <option name="service" value="Mobile App Development">Mobile App Development</option>
+              <option name="service" value="Database Development">Database Development</option>
+              <option name="service" value="Database Development">Database Development</option>
+              <option name="service" value="Game Development">Game Development</option>
+              <option name="service" value="E-commerce Development">E-commerce Development</option>
+            </select>
+          </label>
+        </div>
+ 
+        <div class="input-box">
+          <label>Budget
+            <select name="Budget" required>
+              <option disabled>Select Budget</option>
+              <option name="Budget" value="1500£">2300£</option>
+              <option name="Budget" value="1500£">2000£</option>
+              <option name="Budget" value="1500£">1500£</option>
+              <option name="Budget" value="1500£">970£</option>
+              <option name="Budget" value="1500£">800£</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="input-box">
+          <label>Message
+            <textarea name="Message" placeholder="Your message here..." id="message" cols="25" rows="5"></textarea>
+          </label>
+        </div>
+        <button type="submit">Submit
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </form>
   </body>
 </html>

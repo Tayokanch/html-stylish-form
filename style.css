@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(90deg, #3796c2 0%, #962ebf 60%, #37024c 100%);
+    display: grid;
+    place-items: center;
+}
+
+form{
+    max-width: 500px;
+    background-color:rgba(245, 245, 245, 0.956);
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: inset 0 0 1px 1px #37024c;
+}
+
+
+h1{
+    text-align: center;
+    font-family: 'roboto';
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.input-box{
+ 
+    padding: 5px 20px 5px 20px;
+
+}
+
+input, select, textarea{
+    display: block;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.523);
+}
+
+input{
+   height: 30px;
+}
+
+label{
+    font-family: sans-serif;
+    font-size: 0.8rem;
+}
+
+
+
+option{
+    padding: 10px;
+}
+::placeholder{
+    padding: 10px;
+}
+
+button{
+    width: 100%;
+    background-image: linear-gradient(90deg, #37024c 0%, #962ebf 40%,  #3796c2 100%);
+    padding: 8px;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    border-radius: 20px ;
+    cursor: pointer;
+
+}
+
+
+@media only screen and (min-width:1000px){
+    .input-box{
+ 
+        padding: 20px
+    
+    }
+}
